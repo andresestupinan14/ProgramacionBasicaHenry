@@ -1,1 +1,1 @@
-Programa que pida usuario y contraseña con 3 intentos.
+Programa para adivinar un número entre 1 y 10.
