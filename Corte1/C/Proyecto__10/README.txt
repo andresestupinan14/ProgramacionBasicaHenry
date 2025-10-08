@@ -1,1 +1,1 @@
-Programa que indica el sifno zodiacal con la fecha de nacimiento.
+Programa que indica el signo zodiacal con la fecha de nacimiento.
