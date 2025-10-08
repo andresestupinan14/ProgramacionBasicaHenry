@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(){
+	int intento,numero,i;
+	srand(time(NULL));
+	numero=rand()% 10+1;
+	for(i=1;i<=10;i++){
+		printf("adivine el numero:\n");
+		scanf("%d",&intento);
+		
+		if(numero==intento){
+		printf("numero correcto %d\n",numero);
+	printf("numero de intentos %d",i);
+		return 0;
+		}else if(i>10){
+			printf("se acbaron los intentos.");
+		}
+	
+		} 
+	
+	return 0;
+}0;
+}
