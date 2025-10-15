@@ -8,33 +8,33 @@ int main() {
 
 
 		do {
-		printf("escriba 1 para el area y 2 para el perimetro");
+		printf("escriba 1 para el area y 2 para el perimetro\n");
 		scanf("%d",&operacion);
 	
 	if (operacion==1){
-		printf("seleccione la figura: circulo=1 triangulo=2 rectangulo=3 cuadrado=4");
+		printf("seleccione la figura: circulo=1 triangulo=2 rectangulo=3 cuadrado=4\n");
 		scanf("%d",&figura);
 		if(figura==1){
-			printf("escriba el valor del radio");
+			printf("escriba el valor del radio ");
 			scanf("%d",&radio);
 			resultado=radio*radio*3.14;
 			printf("el resultado del area del circulo es %.2f ",resultado);
 		}else if(figura==2){
-			printf("escriba el valor de la base");
+			printf("escriba el valor de la base ");
 			scanf("%d",&base);
-			printf("escriba el valor de la altura");
+			printf("escriba el valor de la altura ");
 			scanf("%d",&altura);
 			resultado=base*altura/2;
 			printf("el valor del el area del triangulo es %.2f ",resultado);
 		}else if(figura==3){
-			printf("escriba el valor de la base");
+			printf("escriba el valor de la base ");
 			scanf("%d",&base);
-			printf("escriba el valor de la altura");
+			printf("escriba el valor de la altura ");
 			scanf("%d",&altura);
 			resultado=base*altura;
 			printf("el area del rectangulo es %.2f ",resultado);
 		}else if(figura==4){
-		printf("escriba el valor del lado");
+		printf("escriba el valor del lado ");
 		scanf("%d",&lado);
 		resultado=lado*lado;
 		printf("el area del cuadrado es %.2f ",resultado);
@@ -42,7 +42,7 @@ int main() {
 	
 }else if(operacion==2){
 
-	printf("seleccione la figura: circulo=1 triangulo=2 rectangulo=3 cuadrado=4");
+	printf("seleccione la figura: circulo=1 triangulo=2 rectangulo=3 cuadrado=4 \n");
 		scanf("%d",&figura);
 		if(figura==1){
 			printf("escriba el valor del radio");
@@ -50,29 +50,29 @@ int main() {
 			resultado=2*radio*3.14;
 			printf("el resultado del perimetro del circulo es %.2f ",resultado);
 		}else if(figura==2){
-			printf("escriba el valor de lado1");
+			printf("escriba el valor de lado1 ");
 			scanf("%d",&lado);
-			printf("escriba el valor de la lado2");
+			printf("escriba el valor de la lado2 ");
 			scanf("%d",&lado2);
-			printf("escriba el valor de la lado3");
+			printf("escriba el valor de la lado3 ");
 			scanf("%d",&lado3);
 			resultado=lado+lado2+lado3;
 			printf("el valor del el perimetro del triangulo es %.2f ",resultado);
 		}else if(figura==3){
-			printf("escriba el valor de la base");
+			printf("escriba el valor de la base ");
 			scanf("%d",&base);
-			printf("escriba el valor de la altura");
+			printf("escriba el valor de la altura ");
 			scanf("%d",&altura);
 			resultado=2*base+2*altura;
 			printf("el area del rectangulo es %.2f ",resultado);
 		}else if(figura==4){
-		printf("escriba el valor del lado");
+		printf("escriba el valor del lado ");
 		scanf("%d",&lado);
 		resultado=lado+lado+lado+lado;
 		printf("el perimetro del cuadrado es %.2f ",resultado);
 		}
 	}
-	 printf("¿Desea realizar otra operacion? (s/n): ");
+	 printf("\n¿Desea realizar otra operacion? (s/n): ");
         scanf(" %c", &repetir); 
 	
 }while (repetir == 's' || repetir == 'S');
