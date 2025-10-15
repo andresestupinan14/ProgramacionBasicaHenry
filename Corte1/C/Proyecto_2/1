@@ -57,7 +57,7 @@ int main() {
 			printf("escriba el valor de la lado3 ");
 			scanf("%d",&lado3);
 			resultado=lado+lado2+lado3;
-			printf("el valor del el perimetro del triangulo es %.2f ",resultado);
+			printf("el valor del perimetro del triangulo es %.2f ",resultado);
 		}else if(figura==3){
 			printf("escriba el valor de la base ");
 			scanf("%d",&base);
