@@ -6,20 +6,20 @@ int main() {
 	int horas;
 	float precio_h,sueldo_b,retencion,sueldo_n;
 	char nombre[30];
-	printf("escriba el nombre del trabajador");
+	printf("escriba el nombre del trabajador\n");
 	scanf("%[^]", &nombre);
 	fflush(stdin);
-	printf("escriba el pago por hora");
+	printf("escriba el pago por hora\n");
 	scanf("%f",&precio_h);
-	printf("escriba el numero de horas");
+	printf("escriba el numero de horas\n");
 	scanf("%d",&horas);
 	sueldo_b= horas * precio_h;
 	retencion= sueldo_b*5/100;
 	sueldo_n=sueldo_b - retencion;
 	
-	printf("el sueldo bruto es %f\n",sueldo_b);
-	printf("el valor de la retencion es %f\n",retencion);
-	printf("el sueldo neto es %f",sueldo_n);
+	printf("el sueldo bruto es %3.f\n",sueldo_b);
+	printf("el valor de la retencion es %3.f\n",retencion);
+	printf("el sueldo neto es %3.f",sueldo_n);
 	getch();
 
 }
