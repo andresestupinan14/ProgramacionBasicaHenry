@@ -17,9 +17,9 @@ int main() {
 	retencion= sueldo_b*5/100;
 	sueldo_n=sueldo_b - retencion;
 	
-	printf("el sueldo bruto es %3.f\n",sueldo_b);
-	printf("el valor de la retencion es %3.f\n",retencion);
-	printf("el sueldo neto es %3.f",sueldo_n);
+	printf("el sueldo bruto es %.3f\n",sueldo_b);
+	printf("el valor de la retencion es %.3f\n",retencion);
+	printf("el sueldo neto es %.3f",sueldo_n);
 	getch();
 
 }
