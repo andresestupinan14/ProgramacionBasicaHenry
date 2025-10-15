@@ -3,7 +3,7 @@
 
 int main() {
 	int bisiesto;
-	printf("escriba el nunmero del año");
+	printf("escriba el nunmero del año \n");
 	scanf("%d",&bisiesto);
 
 	if ((bisiesto % 4 ==0 && bisiesto % 100 !=0 )||(bisiesto % 400 == 0)){
