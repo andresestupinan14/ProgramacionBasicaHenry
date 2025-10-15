@@ -5,7 +5,7 @@ int main(){
 float cuenta,numero,suma,promedio;
 suma=0;
 cuenta=0;
-	printf("ingrese numeros positivos (finalice con un negativo)");
+	printf("ingrese numeros positivos (finalice con un negativo)\n");
 		scanf("%f",&numero);
 	do{
 		suma=suma+numero;
