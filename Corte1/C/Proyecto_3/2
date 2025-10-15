@@ -17,7 +17,7 @@ int main() {
 	
 	total= precio*unidad;
 	
-	printf("el valor total %3.f\n",total);
+	printf("el valor total %.3f\n",total);
 	printf("producto: %s\n",producto);
 	printf("numero de productos: %d",unidad);
 
