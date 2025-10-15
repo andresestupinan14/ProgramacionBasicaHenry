@@ -72,7 +72,7 @@ int main() {
 		printf("el perimetro del cuadrado es %.2f ",resultado);
 		}
 	}
-	 printf("Â¿Desea realizar otra operacion? (s/n): ");
+	 printf("¿Desea realizar otra operacion? (s/n): ");
         scanf(" %c", &repetir); 
 	
 }while (repetir == 's' || repetir == 'S');
