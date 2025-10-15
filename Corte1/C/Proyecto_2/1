@@ -64,7 +64,7 @@ int main() {
 			printf("escriba el valor de la altura ");
 			scanf("%d",&altura);
 			resultado=2*base+2*altura;
-			printf("el area del rectangulo es %.2f ",resultado);
+			printf("el perimetro del rectangulo es %.2f ",resultado);
 		}else if(figura==4){
 		printf("escriba el valor del lado ");
 		scanf("%d",&lado);
