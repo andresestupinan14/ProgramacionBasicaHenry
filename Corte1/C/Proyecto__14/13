@@ -15,7 +15,7 @@ cuenta=0;
 	
 	if (cuenta>0){
 		promedio=suma/cuenta;
-		printf("promedio es %f.2",promedio);
+		printf("promedio es %.2f",promedio);
 		}else{
 			printf("no se ingresaron numeros positivos");
 		}
