@@ -27,3 +27,4 @@ int apuesta, premio, moneda;
 		
 	
 	}
+}
