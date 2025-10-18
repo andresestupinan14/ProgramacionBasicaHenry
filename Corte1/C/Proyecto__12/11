@@ -15,7 +15,7 @@ int main(){
 		printf("Esriba la contraseña\n");
 		scanf("%s",contrasena);
 
-		if(strcmp(contrasena,correcta)==0&&strcmp(contrasena,correcta)==0) {
+		if(strcmp(contrasena,correcta)==0&&strcmp(usuario,user)==0) {
 			printf("acceso permitido");
 			
 			return 0;
