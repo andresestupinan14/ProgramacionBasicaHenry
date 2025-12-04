@@ -1,0 +1,91 @@
+#include <stdio.h>
+
+void selectionSort(int arr[], int n) {
+    int i, j, minIndex, temp;
+
+    for (i = 0; i < n - 1; i++) {
+        minIndex = i;  
+        for (j = i + 1; j < n; j++) {
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j;
+            }
+        }
+
+    
+        if (minIndex != i) {
+            temp = arr[i];
+            arr[i] = arr[minIndex];
+            arr[minIndex] = temp;
+        }
+    }
+}
+
+int linearSearch(int arr[], int n, int key) {
+    for (int i = 0; i < n; i++) {    
+        if (arr[i] == key) {               
+            return i;                  
+        }
+    }
+    return -1;                            
+}
+int linearSearchAll(int arr[], int n, int key, int indices[]) {
+    int count = 0;                      
+
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == key) {
+            indices[count] = i;         
+            count++;                       
+        }
+    }
+
+    return count;                        
+}
+
+int main(void) {
+
+	 int n;
+		printf("tamaño del arreglo\n");
+		scanf("%d",&n);
+	    int arr[n];
+	    for(int i=0;i<n;i++) {
+    		printf("valor del vector en posicion %d\n",i);
+    		scanf("%d",&arr[i]);
+		}
+    	n = sizeof(arr) / sizeof(arr[0]);
+    
+
+    int key;
+    printf("Arreglo: ");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+
+    printf("Ingrese el numero a buscar: ");
+    scanf("%d", &key);
+
+    
+    int pos = linearSearch(arr, n, key);
+
+    if (pos == -1) {
+        printf("El numero %d NO se encuentra en el arreglo.\n", key);
+    } else {
+        printf("El numero %d se encuentra (al menos) en la posicion %d (indice 0-based).\n",
+               key, pos);
+    }
+
+    int indices[100];
+    int count = linearSearchAll(arr, n, key, indices);
+
+    if (count == 0) {
+        printf("No se encontraron ocurrencias de %d.\n", key);
+    } else {
+        printf("El numero %d aparece %d veces, en las posiciones: ", key, count);
+        for (int i = 0; i < count; i++) {
+            printf("%d ", indices[i]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
